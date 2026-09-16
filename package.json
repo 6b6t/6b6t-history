@@ -1,0 +1,7 @@
+{
+  "name": "6b6t-history",
+  "private": true,
+  "type": "module",
+  "scripts": { "check": "bun validate.ts" },
+  "dependencies": { "zod": "4.6.1" }
+}
