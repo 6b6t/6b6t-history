@@ -15,6 +15,30 @@ Validation runs automatically on pull requests. Maintainers review historical ac
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for field descriptions and examples. Existing text was migrated from the website and has not been independently researched.
 
+## Upload images using GitHub
+
+You do not need a separate image host. Upload pictures to your fork and include them in the same pull request as your story:
+
+1. Open your fork on GitHub. Open the `images/` folder, then choose **Add file → Upload files**.
+2. If `images/` does not exist yet, choose **Add file → Create new file**, name it `images/README.md`, add a short description, and commit it. You can then open that folder and upload your pictures.
+3. Use descriptive filenames such as `christmas-base-2024.jpg`. Prefer lowercase names with hyphens and no spaces. Compress large screenshots before uploading; JPG, PNG, and WebP are suitable formats.
+4. Edit your story's `images` array in `community-history.json`, using the example below. Replace the filename, description, and credits with your own.
+5. Submit **the uploaded images and JSON edits together in one pull request** to this repository.
+
+```json
+"images": [
+  {
+    "url": "https://raw.githubusercontent.com/6b6t/6b6t-history/main/images/christmas-base-2024.jpg",
+    "alt": "A snow-covered Christmas base with a decorated tree",
+    "caption": "Built by PlayerName. Screenshot by PhotographerName."
+  }
+]
+```
+
+Use the official `6b6t/6b6t-history/main` URL shown above, even while editing your fork. It will start working **after your pull request is merged**. The image will appear on the website after its next automatic update. Filenames and capitalization must match exactly. A GitHub file-view link containing `/blob/` is not a direct image URL; use `raw.githubusercontent.com` as shown.
+
+For multiple images, add more objects to the array, separated by commas. `alt` should describe what is visible; use `caption` for context and credits. Only upload images you have permission to share, and remove private information from screenshots first. Existing public HTTPS image links also work. Videos should remain ordinary YouTube links in the `videos` array; do not upload video files here.
+
 ## Local validation
 
 Install Bun, then run:
