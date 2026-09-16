@@ -1,6 +1,6 @@
 # Community history editing
 
-Share **`public/community-history.json`** with the history team. It is the complete editable history file; nobody needs to edit React or supply iframe code. Its `editingGuide` also travels with the file. After deployment, a copy is available at `/community-history.json`.
+Share **`community-history.json`** with the history team. It is the complete editable history file; nobody needs to edit React or supply iframe code. Its `editingGuide` also travels with the file. After deployment, a copy is available at `/community-history.json`.
 
 ## Writing stories
 
@@ -25,10 +25,10 @@ Example media fields (replace the image URL with the real hosted image):
 }
 ```
 
-## Weekly import
+## Weekly import (run in the website repository)
 
 ```sh
-bun run history:import path/to/community-history.json
+bun run history:fetch
 bun run ci
 ```
 
