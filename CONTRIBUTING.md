@@ -25,7 +25,7 @@ Example media fields (replace the image URL with the real hosted image):
 }
 ```
 
-## Weekly import (run in the website repository)
+## Automatic publishing
 
 ```sh
 bun run history:fetch
@@ -35,3 +35,5 @@ bun run ci
 The import validates the entire file before replacing the checked-in copy. Invalid YouTube links, missing alt text, duplicate IDs, invalid dates, unknown fields, and malformed JSON fail with field-specific errors. Review the content diff, then commit and deploy through the normal workflow. Importing does not publish anything by itself.
 
 `bun run history:check` validates the current file; it also runs in CI. Existing historical prose has been migrated, not independently researched. The community team can now expand every event and supply its archival images and videos. Community story text remains as authored; the surrounding controls use the website's translation pipeline.
+
+The website fetches approved main-branch content every Monday at 03:17 UTC, and on every production deployment. No manual weekly import is required. The commands above remain available for local review.

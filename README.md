@@ -26,7 +26,7 @@ bun run check
 
 ## Publish to the website
 
-Merging here approves the content; it does not deploy the website. Weekly, a website maintainer runs these commands in `6b6t-website`:
+The website automatically fetches approved content from `main` every Monday at 03:17 UTC (09:17 Bangladesh time), and on every normal production deployment. GitHub may delay scheduled runs. Validation must pass before deployment; a failed fetch or validation leaves the running website unchanged. Maintainers can also import locally:
 
 ```sh
 bun run history:fetch
