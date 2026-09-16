@@ -1,0 +1,225 @@
+{
+  "version": 1,
+  "lastUpdated": "2026-09-16",
+  "editingGuide": [
+    "Edit this file and return it for the weekly update. No website code is needed.",
+    "Keep version at 1. Set lastUpdated to YYYY-MM-DD. Events appear in file order.",
+    "Keep existing IDs unchanged. New IDs must be unique lowercase words joined by hyphens.",
+    "description is a list of paragraphs: the first is the preview; the rest expand into the full story.",
+    "tags are categories. Reuse consistent spelling; new tags automatically become filters.",
+    "images is a list of objects: {\"url\":\"https://your-image-url\",\"alt\":\"Describe the image\",\"caption\":\"Optional credit or context\"}. Use already hosted images or existing /assets/ paths.",
+    "videos is a list of normal YouTube links. Do not paste iframe HTML or upload video files.",
+    "sources is a list of HTTPS reference links. Leave unavailable images, videos or sources as empty arrays.",
+    "Preserve factual accuracy and image credits. Do not invent missing historical details."
+  ],
+  "events": [
+    {
+      "id": "birth-of-6b6t",
+      "year": "2022",
+      "date": "January 16, 2022",
+      "title": "Birth of 6b6t",
+      "tags": ["Milestones"],
+      "description": [
+        "Started by qbasty on January 16th, 2022, 6b6t immediately gained traction as the 1.12.2 anarchy server with /tpa and /home."
+      ],
+      "images": [],
+      "videos": [],
+      "sources": []
+    },
+    {
+      "id": "acquisitions",
+      "year": "2022",
+      "date": "March 2, 2022",
+      "title": "Acquisitions",
+      "tags": ["Community"],
+      "description": [
+        "During the third month of its existence, 6b6t acquired 7b7t which was about to shut down. The maps were merged together and history was saved."
+      ],
+      "images": [],
+      "videos": [],
+      "sources": []
+    },
+    {
+      "id": "no-anticheat-event",
+      "year": "2022",
+      "date": "October 14, 2022",
+      "title": "No Anticheat Event",
+      "tags": ["Events"],
+      "description": [
+        "The first ever event during which the anti cheat was disabled on 6b6t, allowing for uncontrolled chaos and player activity for over 48 hours."
+      ],
+      "images": [],
+      "videos": [],
+      "sources": []
+    },
+    {
+      "id": "6b6t-updates-to-1-19-2",
+      "year": "2022",
+      "date": "December 10, 2022",
+      "title": "6b6t Updates To 1.19.2",
+      "tags": ["Updates"],
+      "description": [
+        "6b6t becomes the first anarchy server to upgrade to 1.19 thanks to the experimental software MultiPaper. 2b2t took over a year longer to upgrade."
+      ],
+      "images": [],
+      "videos": [],
+      "sources": ["https://multipaper.io/"]
+    },
+    {
+      "id": "lack-of-growth",
+      "year": "2023",
+      "date": "June - November 2023",
+      "title": "Lack Of Growth",
+      "tags": ["Community"],
+      "description": [
+        "6b6t experiences the only period in time when the average player count was around 30. There is no growth without challenges."
+      ],
+      "images": [],
+      "videos": [],
+      "sources": []
+    },
+    {
+      "id": "switching-to-folia",
+      "year": "2023",
+      "date": "June 25, 2023",
+      "title": "Switching to Folia",
+      "tags": ["Updates"],
+      "description": [
+        "6b6t updates to 1.19.4 thanks  to another software called Folia, which brings more stability and performance to the server, resuming the growth."
+      ],
+      "images": [],
+      "videos": [],
+      "sources": []
+    },
+    {
+      "id": "first-300-player-record",
+      "year": "2023",
+      "date": "August 2, 2023",
+      "title": "First 300+ Player Record",
+      "tags": ["Milestones"],
+      "description": [
+        "The server reaches 300+ players for the first time, without any queue, making this a historical achievement for both the marketing efforts of 6b6t and the development team."
+      ],
+      "images": [],
+      "videos": [],
+      "sources": []
+    },
+    {
+      "id": "christmas-event",
+      "year": "2023",
+      "date": "December 1-31, 2023",
+      "title": "Christmas Event",
+      "tags": ["Events"],
+      "description": [
+        "Month long Christmas event with daily quests, bringing the community together and offering new fun ways to spend time on the server."
+      ],
+      "images": [],
+      "videos": [],
+      "sources": []
+    },
+    {
+      "id": "update-to-1-21-1",
+      "year": "2024",
+      "date": "September 13, 2024",
+      "title": "Update to 1.21.1",
+      "tags": ["Updates"],
+      "description": [
+        "Server updates to 1.21.1 on September 13th, 2024, under new software \"Abomination\" - a major version leap."
+      ],
+      "images": [],
+      "videos": [],
+      "sources": []
+    },
+    {
+      "id": "hidden-admin-dupes",
+      "year": "2024",
+      "date": "October 13, 2024",
+      "title": "Hidden Admin Dupes",
+      "tags": ["Events"],
+      "description": [
+        "The 6b6t Team for a period of few months experiments with adding hidden dupes and letting players discover them."
+      ],
+      "images": [],
+      "videos": [],
+      "sources": []
+    },
+    {
+      "id": "christmas-build-competition",
+      "year": "2024",
+      "date": "December 2024",
+      "title": "Christmas Build Competition",
+      "tags": ["Events", "Builds"],
+      "description": [
+        "Another build competition is held on 6b6t, likely the most popular. The results are shown in an video on our YouTube channel. Click here to watch the video."
+      ],
+      "images": [],
+      "videos": ["https://youtu.be/XSL6s1TKKpc"],
+      "sources": []
+    },
+    {
+      "id": "illegals-event",
+      "year": "2025",
+      "date": "February 28, 2025",
+      "title": "Illegals Event",
+      "tags": ["Events"],
+      "description": [
+        "A rare illegals event takes place on the server, creating a unique experience for those online."
+      ],
+      "images": [],
+      "videos": [],
+      "sources": []
+    },
+    {
+      "id": "dupe-patch",
+      "year": "2025",
+      "date": "March 21, 2025",
+      "title": "Dupe Patch",
+      "tags": ["Updates"],
+      "description": [
+        "Last known admin added dupe was patched, resolving a significant issue."
+      ],
+      "images": [],
+      "videos": [],
+      "sources": []
+    },
+    {
+      "id": "new-build-competition",
+      "year": "2025",
+      "date": "April 10, 2025",
+      "title": "New Build Competition",
+      "tags": ["Events", "Builds"],
+      "description": [
+        "New build competition in theme of Ancient Civilizations was started, encouraging creativity and community participation."
+      ],
+      "images": [],
+      "videos": [],
+      "sources": []
+    },
+    {
+      "id": "all-time-player-high",
+      "year": "2025",
+      "date": "June 1, 2025",
+      "title": "All-Time Player High",
+      "tags": ["Milestones"],
+      "description": [
+        "All Time Player Record 6b6t reaches a brand new record of 580 players online at the same time without a queue. The team announces that 6b6t supporting 1000 players online without a queue is soon going to become a reality."
+      ],
+      "images": [],
+      "videos": [],
+      "sources": []
+    },
+    {
+      "id": "largest-creations",
+      "year": "Ongoing",
+      "date": "Ongoing",
+      "title": "Largest Creations",
+      "tags": ["Builds", "Community"],
+      "description": [
+        "Players continue to develop extraordinary artifacts on the server, such as the largest map art called Ashes by the clan SnifferSquad or the largest spawn logo made by 555."
+      ],
+      "images": [],
+      "videos": [],
+      "sources": []
+    }
+  ]
+}
