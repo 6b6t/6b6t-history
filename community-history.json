@@ -347,6 +347,24 @@
       "sources": []
     },
     {
+      "id": "6b6t-subreddit",
+      "year": "2022",
+      "date": "August 4, 2022",
+      "title": "r/6b6t subreddit acquired",
+      "tags": [
+        "Community"
+      ],
+      "description": [
+        "The r/6b6t subreddit was acquired from 6A6K in August."
+      ],
+      "images": [],
+      "videos": [],
+      "sources": [
+        "https://www.reddit.com/r/6b6t/",
+        "https://6b.wiki/index.php?title=6b6t&oldid=4616"
+      ]
+    },
+    {
       "id": "donkey-dupe-2022",
       "year": "2022",
       "date": "August 19, 2022",
@@ -513,6 +531,25 @@
       ]
     },
     {
+      "id": "ikea-v3-dupe",
+      "year": "2023",
+      "date": "April 24, 2023",
+      "title": "IKEA V3 Dupe Becomes Public",
+      "tags": [
+        "Events"
+      ],
+      "description": [
+        "IKEA V3 became public on April 24, 2023, between the January IKEA V2 and May IKEA V5 dupes."
+      ],
+      "images": [],
+      "videos": [
+        "https://www.youtube.com/watch?v=UxTXl2D2v_c"
+      ],
+      "sources": [
+        "https://6b.wiki/index.php?title=IKEA&oldid=3203"
+      ]
+    },
+    {
       "id": "ikea-v5-dupe",
       "year": "2023",
       "date": "May 8, 2023",
@@ -650,6 +687,23 @@
       "sources": []
     },
     {
+      "id": "chunk-dupe",
+      "year": "2024",
+      "date": "February-August, 2024",
+      "title": "Chunk Dupe",
+      "tags": [
+        "Community"
+      ],
+      "description": [
+        "In February, the most powerful dupe in the server's history would be released, the Chunk Dupe, staying active until August of 2024."
+      ],
+      "images": [],
+      "videos": [],
+      "sources": [
+        "https://6b.wiki/index.php?title=6b6t&oldid=4616"
+      ]
+    },
+    {
       "id": "104-founded",
       "year": "2024",
       "date": "Mid 2024",
@@ -710,6 +764,23 @@
       "images": [],
       "videos": [],
       "sources": []
+    },
+    {
+      "id": "2024-auth-exploit",
+      "year": "2024",
+      "date": "August 23, 2024",
+      "title": "Autism Inc Auth Exploit",
+      "tags": [
+        "Community"
+      ],
+      "description": [
+        "In August the group Autism Inc discovered an authentication exploit related to the AuthMeVelocity and PluginMessageListener plugins."
+      ],
+      "images": [],
+      "videos": [],
+      "sources": [
+        "https://6b.wiki/index.php?title=6b6t&oldid=4616"
+      ]
     },
     {
       "id": "update-to-1-21-1",
@@ -798,11 +869,14 @@
         "Events"
       ],
       "description": [
-        "On March 12, 2025, the group Autism Inc used an authentication exploit to log in to qbasty's account."
+        "On March 12, 2025, the group Autism Inc used an authentication exploit to log in to qbasty's account.",
+        "The affected bases were restored from backups by Xymb."
       ],
       "images": [],
       "videos": [],
-      "sources": []
+      "sources": [
+        "https://6b.wiki/index.php?title=6b6t&oldid=4616"
+      ]
     },
     {
       "id": "dupe-patch",
@@ -851,6 +925,24 @@
       "sources": []
     },
     {
+      "id": "2025-item-frame-dupe",
+      "year": "2025",
+      "date": "May 29, 2025",
+      "title": "Item frame dupe event",
+      "tags": [
+        "Events"
+      ],
+      "description": [
+        "For 24 hours the item frame dupe would be active again.",
+        "Admins added the item frame dupe. The dupe worked like this: players would place a shulker in an item frame and right-click it a few times. Eventually, the item would duplicate when taken out of the item frame. The dupe was active for 24 hours and only had a minor impact on the server economy compared to other earlier and later dupes."
+      ],
+      "images": [],
+      "videos": [],
+      "sources": [
+        "https://6b.wiki/index.php?title=6b6t&oldid=4616"
+      ]
+    },
+    {
       "id": "all-time-player-high",
       "year": "2025",
       "date": "June 1, 2025",
@@ -860,7 +952,6 @@
       ],
       "description": [
         "6b6t reaches a brand new all-time record of 580 players online at the same time without a queue.",
-        "Admins added the item frame dupe. The dupe worked like this: players would place a shulker in an item frame and right-click it a few times. Eventually, the item would duplicate when taken out of the item frame. The dupe was active for 24 hours and only had a minor impact on the server economy compared to other earlier and later dupes.",
         "The team announces that 6b6t supporting 1000 players online without a queue is soon going to become a reality."
       ],
       "images": [],
@@ -960,6 +1051,23 @@
       "sources": []
     },
     {
+      "id": "new-lobbies",
+      "year": "2025",
+      "date": "November 1, 2025",
+      "title": "Halloween Lobby Added",
+      "tags": [
+        "Updates"
+      ],
+      "description": [
+        "On November 1, 2025, a Halloween lobby made by Volizray was added. A Christmas lobby followed on December 1."
+      ],
+      "images": [],
+      "videos": [],
+      "sources": [
+        "https://6b.wiki/index.php?title=6b6t&oldid=4616"
+      ]
+    },
+    {
       "id": "dropping-heads-event",
       "year": "2025",
       "date": "November 10, 2025",
@@ -1032,7 +1140,9 @@
         "The server is hosted at hytale.6b6t.org."
       ],
       "images": [],
-      "videos": [],
+      "videos": [
+        "https://www.youtube.com/watch?v=KTy6EGVdpIE"
+      ],
       "sources": []
     },
     {
@@ -1059,11 +1169,14 @@
         "Events"
       ],
       "description": [
-        "From April 24 to 28, 2026, the Nether Roof Event was held."
+        "From April 24 to 28, 2026, the Nether Roof Event was held.",
+        "Players built sky logos on the Nether Roof during the event."
       ],
       "images": [],
       "videos": [],
-      "sources": []
+      "sources": [
+        "https://6b.wiki/index.php?title=6b6t&oldid=4616"
+      ]
     },
     {
       "id": "update-1-21-11",
@@ -1094,6 +1207,23 @@
       "images": [],
       "videos": [],
       "sources": []
+    },
+    {
+      "id": "update-26-1-2",
+      "year": "2026",
+      "date": "July 3, 2026",
+      "title": "6b6t Updates to 26.1.2",
+      "tags": [
+        "Updates"
+      ],
+      "description": [
+        "6b6t updated to 26.1.2 on July 3, 2026, between the July 1 update to 26.1 and the July 7 update to 26.2."
+      ],
+      "images": [],
+      "videos": [],
+      "sources": [
+        "https://6b.wiki/index.php?title=6b6t&oldid=4616"
+      ]
     },
     {
       "id": "update-26-2",
