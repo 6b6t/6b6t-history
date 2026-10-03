@@ -411,21 +411,6 @@
       "sources": []
     },
     {
-      "id": "ikea-founded",
-      "year": "2022",
-      "date": "Late 2022",
-      "title": "IKEA Clan Is Founded",
-      "tags": [
-        "Community"
-      ],
-      "description": [
-        "The IKEA clan is founded in late 2022."
-      ],
-      "images": [],
-      "videos": [],
-      "sources": []
-    },
-    {
       "id": "xymb-joins-admin-team",
       "year": "2022",
       "date": "December 2022",
@@ -476,10 +461,44 @@
       "sources": []
     },
     {
+      "id": "laggang-dupe-2022",
+      "year": "2022",
+      "date": "December 2022",
+      "title": "The LagGang Dupe Is Active",
+      "tags": [
+        "Events"
+      ],
+      "description": [
+        "In December 2022, following the switch to MultiPaper, the LagGang Dupe was active on 6b6t."
+      ],
+      "images": [],
+      "videos": [],
+      "sources": [
+        "https://6b.wiki/index.php?title=IKEA&oldid=3203"
+      ]
+    },
+    {
+      "id": "ikea-founded",
+      "year": "2023",
+      "date": "January 1, 2023",
+      "title": "IKEA Clan Is Founded",
+      "tags": [
+        "Community"
+      ],
+      "description": [
+        "The IKEA clan was founded on January 1, 2023."
+      ],
+      "images": [],
+      "videos": [],
+      "sources": [
+        "https://6b.wiki/index.php?title=IKEA&oldid=3203"
+      ]
+    },
+    {
       "id": "ikea-v2-dupe",
       "year": "2023",
       "date": "January 31, 2023",
-      "title": "The LagGang (IKEA V2) Dupe Is Active",
+      "title": "IKEA V2 Dupe Is Active",
       "tags": [
         "Events"
       ],
@@ -489,7 +508,8 @@
       "images": [],
       "videos": [],
       "sources": [
-        "https://6b.wiki/index.php?title=6b6t&oldid=4616"
+        "https://6b.wiki/index.php?title=IKEA&oldid=3203",
+        "https://www.youtube.com/watch?v=ubI4pJ35Gvk"
       ]
     },
     {
