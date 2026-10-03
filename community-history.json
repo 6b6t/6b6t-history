@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastUpdated": "2026-09-30",
+  "lastUpdated": "2026-10-03",
   "editingGuide": [
     "Edit this file and return it for the weekly update. No website code is needed.",
     "Keep version at 1. Set lastUpdated to YYYY-MM-DD. Events appear in file order.",
@@ -22,11 +22,13 @@
         "Events"
       ],
       "description": [
-        "On March 3, 2019, Leeewith3Es started 6b9t.org with a new map, the first map of what became 6b6t."
+        "On March 3, 2019, Leeewith3Es launched 6b9t.org with a new map. This was an earlier server that later used the 6b6t.org domain."
       ],
       "images": [],
       "videos": [],
-      "sources": []
+      "sources": [
+        "https://6b.wiki/index.php?title=6b6t&oldid=4616"
+      ]
     },
     {
       "id": "6b6t-rebrand",
@@ -183,16 +185,18 @@
       "id": "7b7t-rebrand",
       "year": "2021",
       "date": "January 31, 2021",
-      "title": "Map Reset and Rebrand to 7b7t",
+      "title": "Leee Launches 7b7t",
       "tags": [
         "Events"
       ],
       "description": [
-        "On January 31, 2021, the server's map reset and the server rebranded to 7b7t after 254n_m backdoored it."
+        "On January 31, 2021, Leee launched 7b7t.me using an August 19, 2020 backup of the earlier 6b6t map."
       ],
       "images": [],
       "videos": [],
-      "sources": []
+      "sources": [
+        "https://6b.wiki/index.php?title=6b6t&oldid=4616"
+      ]
     },
     {
       "id": "birth-of-6b6t",
@@ -243,21 +247,6 @@
       "sources": []
     },
     {
-      "id": "colonizadores-join",
-      "year": "2022",
-      "date": "Early 2022",
-      "title": "Colonizadores Join From 2b2t",
-      "tags": [
-        "Community"
-      ],
-      "description": [
-        "Colonizadores join 6b6t from 2b2t in early 2022."
-      ],
-      "images": [],
-      "videos": [],
-      "sources": []
-    },
-    {
       "id": "acquisitions",
       "year": "2022",
       "date": "March 2, 2022",
@@ -293,17 +282,19 @@
     {
       "id": "7b7t-discord-nuked",
       "year": "2022",
-      "date": "May 3, 2022",
+      "date": "May 5, 2022",
       "title": "Pistonmaster Nukes the 7b7t Discord",
       "tags": [
         "Events"
       ],
       "description": [
-        "On May 3, 2022, Pistonmaster nuked the 7b7t Discord server."
+        "On May 5, 2022, Pistonmaster banned everyone from the 7b7t Discord server."
       ],
       "images": [],
       "videos": [],
-      "sources": []
+      "sources": [
+        "https://6b.wiki/index.php?title=6b6t&oldid=4616"
+      ]
     },
     {
       "id": "4th-incursion",
@@ -321,6 +312,23 @@
       "images": [],
       "videos": [],
       "sources": []
+    },
+    {
+      "id": "colonizadores-join",
+      "year": "2022",
+      "date": "July 2022",
+      "title": "Colonizadores Join From 2b2t",
+      "tags": [
+        "Community"
+      ],
+      "description": [
+        "Colonizadores joined 6b6t from 2b2t in July 2022."
+      ],
+      "images": [],
+      "videos": [],
+      "sources": [
+        "https://6b.wiki/index.php?title=6b6t&oldid=4616"
+      ]
     },
     {
       "id": "2022-backdoor",
@@ -418,6 +426,23 @@
       "sources": []
     },
     {
+      "id": "xymb-joins-admin-team",
+      "year": "2022",
+      "date": "December 2022",
+      "title": "Xymb Joins the Admin Team",
+      "tags": [
+        "Community"
+      ],
+      "description": [
+        "Xymb joined the admin team by the December 2022 upgrade to MultiPaper."
+      ],
+      "images": [],
+      "videos": [],
+      "sources": [
+        "https://6b.wiki/index.php?title=6b6t&oldid=4616"
+      ]
+    },
+    {
       "id": "6b6t-updates-to-1-19-2",
       "year": "2022",
       "date": "December 10, 2022",
@@ -451,25 +476,10 @@
       "sources": []
     },
     {
-      "id": "laggang-dupe-2022",
-      "year": "2022",
-      "date": "December 2022",
-      "title": "The LagGang Dupe Is Active",
-      "tags": [
-        "Events"
-      ],
-      "description": [
-        "In December 2022, following the switch to MultiPaper, the LagGang Dupe was active on 6b6t."
-      ],
-      "images": [],
-      "videos": [],
-      "sources": []
-    },
-    {
       "id": "ikea-v2-dupe",
       "year": "2023",
       "date": "January 31, 2023",
-      "title": "IKEA V2 Dupe Is Active",
+      "title": "The LagGang (IKEA V2) Dupe Is Active",
       "tags": [
         "Events"
       ],
@@ -478,7 +488,9 @@
       ],
       "images": [],
       "videos": [],
-      "sources": []
+      "sources": [
+        "https://6b.wiki/index.php?title=6b6t&oldid=4616"
+      ]
     },
     {
       "id": "ikea-v5-dupe",
@@ -552,21 +564,6 @@
       ],
       "description": [
         "In mid 2023, the IKEA clan discovers the godmode exploit."
-      ],
-      "images": [],
-      "videos": [],
-      "sources": []
-    },
-    {
-      "id": "xymb-joins-admin-team",
-      "year": "2023",
-      "date": "Mid 2023",
-      "title": "Xymb Joins the Admin Team",
-      "tags": [
-        "Community"
-      ],
-      "description": [
-        "Xymb joins the admin team in mid 2023."
       ],
       "images": [],
       "videos": [],
@@ -842,7 +839,7 @@
         "Milestones"
       ],
       "description": [
-        "6b6t reaches a brand new all-time record of 580 players online at the same time without a queue, during the item frame dupe.",
+        "6b6t reaches a brand new all-time record of 580 players online at the same time without a queue.",
         "Admins added the item frame dupe. The dupe worked like this: players would place a shulker in an item frame and right-click it a few times. Eventually, the item would duplicate when taken out of the item frame. The dupe was active for 24 hours and only had a minor impact on the server economy compared to other earlier and later dupes.",
         "The team announces that 6b6t supporting 1000 players online without a queue is soon going to become a reality."
       ],
@@ -1106,7 +1103,9 @@
       ],
       "images": [],
       "videos": [],
-      "sources": []
+      "sources": [
+        "https://blog.6b6t.org/minecraft-banned-6b6t/"
+      ]
     },
     {
       "id": "summer-dupe-2026",
@@ -1118,12 +1117,15 @@
         "Events"
       ],
       "description": [
-        "Multiple dupes were added to the server, with the player count peaking at 1130 players online at the same time.",
+        "During the Summer Dupe event, 6b6t reached over 1,155 players online at once without a queue, according to the official server announcement.",
         "The Summer Dupe event ran from August 14 to 24."
       ],
       "images": [],
       "videos": [],
-      "sources": []
+      "sources": [
+        "https://blog.6b6t.org/mojang-anarchymod-6b6t-dmca/",
+        "https://6b.wiki/Wiki/2026_Summer_Dupe"
+      ]
     },
     {
       "id": "7th-incursion",
@@ -1154,7 +1156,10 @@
       ],
       "images": [],
       "videos": [],
-      "sources": []
+      "sources": [
+        "https://github.com/github/dmca/blob/master/2026/09/2026-09-17-mojang.md",
+        "https://blog.6b6t.org/mojang-anarchymod-6b6t-dmca/"
+      ]
     },
     {
       "id": "largest-creations",
