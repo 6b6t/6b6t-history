@@ -14,191 +14,6 @@
   ],
   "events": [
     {
-      "id": "6b9t-founded",
-      "year": "2019",
-      "date": "March 3, 2019",
-      "title": "Leeewith3Es Starts 6b9t.org",
-      "tags": [
-        "Events"
-      ],
-      "description": [
-        "On March 3, 2019, Leeewith3Es launched 6b9t.org with a new map. This was an earlier server that later used the 6b6t.org domain."
-      ],
-      "images": [],
-      "videos": [],
-      "sources": [
-        "https://6b.wiki/index.php?title=6b6t&oldid=4616"
-      ]
-    },
-    {
-      "id": "6b6t-rebrand",
-      "year": "2019",
-      "date": "June 25, 2019",
-      "title": "6b9t Rebrands to 6b6t.org",
-      "tags": [
-        "Events"
-      ],
-      "description": [
-        "On June 25, 2019, 6b9t rebranded to 6b6t.org to avoid sounding like a joke."
-      ],
-      "images": [],
-      "videos": [],
-      "sources": []
-    },
-    {
-      "id": "1st-incursion",
-      "year": "2019",
-      "date": "July 2019",
-      "title": "1st Incursion",
-      "tags": [
-        "Events"
-      ],
-      "description": [
-        "The 1st incursion took place in July 2019.",
-        "Taiwanese players join the server in large numbers, and the player count surpasses 50."
-      ],
-      "images": [],
-      "videos": [
-        "https://www.youtube.com/watch?v=5kxDuOfttVw"
-      ],
-      "sources": []
-    },
-    {
-      "id": "reset-nov-2019",
-      "year": "2019",
-      "date": "November 2019",
-      "title": "Server Resets After Hard Disk Failure",
-      "tags": [
-        "Events"
-      ],
-      "description": [
-        "In November 2019, the server reset following a hard disk failure.",
-        "This is the first of many map resets in the early history of 6b6t."
-      ],
-      "images": [],
-      "videos": [],
-      "sources": []
-    },
-    {
-      "id": "reset-dec-2019",
-      "year": "2019",
-      "date": "December 2019",
-      "title": "Server Resets After Region Files Corrupt",
-      "tags": [
-        "Events"
-      ],
-      "description": [
-        "In December 2019, the server reset again after its region files became corrupted."
-      ],
-      "images": [],
-      "videos": [],
-      "sources": []
-    },
-    {
-      "id": "chunk-dupe-2020",
-      "year": "2020",
-      "date": "April 2020",
-      "title": "The Chunk Dupe Is Active",
-      "tags": [
-        "Events"
-      ],
-      "description": [
-        "In April 2020, the Chunk Dupe was active on the server."
-      ],
-      "images": [],
-      "videos": [
-        "https://www.youtube.com/watch?v=YzntH2a9Ilo"
-      ],
-      "sources": []
-    },
-    {
-      "id": "wwe-donkey-dupe",
-      "year": "2020",
-      "date": "June 11 - November 2020",
-      "title": "The WWE Donkey Dupe Is Active",
-      "tags": [
-        "Events"
-      ],
-      "description": [
-        "From June 11 until November 2020, the WWE Donkey Dupe was active on the server."
-      ],
-      "images": [],
-      "videos": [
-        "https://www.youtube.com/watch?v=Vx8JYBkpmAY"
-      ],
-      "sources": []
-    },
-    {
-      "id": "2nd-incursion",
-      "year": "2020",
-      "date": "Mid 2020",
-      "title": "2nd Incursion",
-      "tags": [
-        "Events"
-      ],
-      "description": [
-        "An influx of Spanish players occurs after MrCramYT makes a video about the server.",
-        "MrCramYT made a video about 6b6t that gained around 23,000 views, leading many Spanish players to join the server. The video has since been deleted due to drama surrounding the admins at the time."
-      ],
-      "images": [],
-      "videos": [
-        "https://www.youtube.com/watch?v=NyM_C83ye6U"
-      ],
-      "sources": []
-    },
-    {
-      "id": "domain-sold-to-jj",
-      "year": "2020",
-      "date": "December 1, 2020",
-      "title": "bleepo Sells the 6b6t.org Domain",
-      "tags": [
-        "Events"
-      ],
-      "description": [
-        "On December 1, 2020, bleepo sold the 6b6t.org domain to JJ for $5k.",
-        "JJ, the admin of 9b9t, later sold the domain to qbasty."
-      ],
-      "images": [],
-      "videos": [
-        "https://www.youtube.com/watch?v=LQfO_RxcHxI"
-      ],
-      "sources": []
-    },
-    {
-      "id": "llama-dupe",
-      "year": "2021",
-      "date": "January 1 - May 2021",
-      "title": "The Llama Dupe Is Active",
-      "tags": [
-        "Events"
-      ],
-      "description": [
-        "From January 1 until May 2021, the Llama Dupe was active on 6b6t/7b7t."
-      ],
-      "images": [],
-      "videos": [
-        "https://www.youtube.com/watch?v=m4ZeT8NqvCM"
-      ],
-      "sources": []
-    },
-    {
-      "id": "7b7t-rebrand",
-      "year": "2021",
-      "date": "January 31, 2021",
-      "title": "Leee Launches 7b7t",
-      "tags": [
-        "Events"
-      ],
-      "description": [
-        "On January 31, 2021, Leee launched 7b7t.me using an August 19, 2020 backup of the earlier 6b6t map."
-      ],
-      "images": [],
-      "videos": [],
-      "sources": [
-        "https://6b.wiki/index.php?title=6b6t&oldid=4616"
-      ]
-    },
-    {
       "id": "birth-of-6b6t",
       "year": "2022",
       "date": "January 16, 2022",
@@ -230,23 +45,6 @@
       "sources": []
     },
     {
-      "id": "thetroll2001-auth-exploit",
-      "year": "2022",
-      "date": "January 22, 2022",
-      "title": "TheTroll2001 Finds an Authentication Exploit",
-      "tags": [
-        "Events"
-      ],
-      "description": [
-        "On January 22, 2022, the player TheTroll2001 found an authentication exploit on 6b6t."
-      ],
-      "images": [],
-      "videos": [
-        "https://www.youtube.com/watch?v=5YQplgfZ9Dg"
-      ],
-      "sources": []
-    },
-    {
       "id": "acquisitions",
       "year": "2022",
       "date": "March 2, 2022",
@@ -256,58 +54,7 @@
       ],
       "description": [
         "During the third month of its existence, 6b6t acquired 7b7t, which was about to shut down. The maps were merged together and history was saved.",
-        "The merge brought thousands of illegal items onto 6b6t."
-      ],
-      "images": [],
-      "videos": [],
-      "sources": []
-    },
-    {
-      "id": "3rd-incursion",
-      "year": "2022",
-      "date": "March 5-24, 2022",
-      "title": "3rd Incursion",
-      "tags": [
-        "Events"
-      ],
-      "description": [
-        "A coordinated raid group effort to grief the overworld spawn further, held in March 2022.",
-        "The incursion (referred to as the 1st incursion on qbasty's version of 6b6t) was planned in three phases: griefing the 2k-by-2k area around spawn, digging a trench around that area, and building an obsidian outpost at spawn.",
-        "Groups including Imperium and PSG_YT's Skilled Crafters took part, led by notnotironboy and PSG_YT. Only the first phase was completed before the trench was left unfinished; the outpost was postponed to the 4th Incursion two months later."
-      ],
-      "images": [],
-      "videos": [],
-      "sources": []
-    },
-    {
-      "id": "7b7t-discord-nuked",
-      "year": "2022",
-      "date": "May 5, 2022",
-      "title": "Pistonmaster Nukes the 7b7t Discord",
-      "tags": [
-        "Events"
-      ],
-      "description": [
-        "On May 5, 2022, Pistonmaster banned everyone from the 7b7t Discord server."
-      ],
-      "images": [],
-      "videos": [],
-      "sources": [
-        "https://6b.wiki/index.php?title=6b6t&oldid=4616"
-      ]
-    },
-    {
-      "id": "4th-incursion",
-      "year": "2022",
-      "date": "May 19, 2022",
-      "title": "4th Incursion",
-      "tags": [
-        "Events"
-      ],
-      "description": [
-        "A follow-up raid on the overworld spawn held on May 19, 2022, meant to finish what the 3rd Incursion had left unfinished.",
-        "Also called the 2nd incursion on qbasty's version of 6b6t, it brought together several raid groups, including Imperium, Imperials, Eternals, and PSG_YT's Skilled Crafters, under leaders such as notnotironboy, tanishisherewith, PSG_YT, SankuOG, and c1yd3i.",
-        "Unlike the 3rd Incursion, this one succeeded: obsidian walls were built around spawn at the 4k mark, an outpost was completed, lag machines were placed, spawn was griefed within a 2k radius, and players were killed at spawn."
+        "The merge brought many different illegals from TheTroll2001 onto 6b6t."
       ],
       "images": [],
       "videos": [],
@@ -331,40 +78,6 @@
       ]
     },
     {
-      "id": "2022-backdoor",
-      "year": "2022",
-      "date": "July-August 2022",
-      "title": "The 2022 Backdoor",
-      "tags": [
-        "Events"
-      ],
-      "description": [
-        "c1yd3i (not the same c1yd3i from 2b2t) backdoors 6b6t around July or August 2022, resulting in a wave of newly created illegal items.",
-        "How c1yd3i's illegal items actually got onto the server was never made public."
-      ],
-      "images": [],
-      "videos": [],
-      "sources": []
-    },
-    {
-      "id": "6b6t-subreddit",
-      "year": "2022",
-      "date": "August 4, 2022",
-      "title": "r/6b6t subreddit acquired",
-      "tags": [
-        "Community"
-      ],
-      "description": [
-        "The r/6b6t subreddit was acquired from 6A6K in August."
-      ],
-      "images": [],
-      "videos": [],
-      "sources": [
-        "https://www.reddit.com/r/6b6t/",
-        "https://6b.wiki/index.php?title=6b6t&oldid=4616"
-      ]
-    },
-    {
       "id": "donkey-dupe-2022",
       "year": "2022",
       "date": "August 19, 2022",
@@ -379,22 +92,6 @@
       "videos": [
         "https://www.youtube.com/watch?v=5kobrduqht4"
       ],
-      "sources": []
-    },
-    {
-      "id": "shulkergang-founded",
-      "year": "2022",
-      "date": "October 6, 2022",
-      "title": "Shulkergang Founded",
-      "tags": [
-        "Community"
-      ],
-      "description": [
-        "Shulkergang, a clan built around a gimmick of wearing shulker boxes using the /head command, was founded on October 6, 2022 by 28st, kokos_odpadnem, and schmiddie.",
-        "28st had previously been a member of LagGang, where he met kokos_odpadnem, who introduced him to duping and supplied him with kits. The idea for a shulker-themed clan came from 28st and led directly to Shulkergang's creation."
-      ],
-      "images": [],
-      "videos": [],
       "sources": []
     },
     {
@@ -567,21 +264,6 @@
       "sources": []
     },
     {
-      "id": "lack-of-growth",
-      "year": "2023",
-      "date": "June - November 2023",
-      "title": "Lack Of Growth",
-      "tags": [
-        "Community"
-      ],
-      "description": [
-        "6b6t experiences the only period when the average player count was around 30. There is no growth without challenges."
-      ],
-      "images": [],
-      "videos": [],
-      "sources": []
-    },
-    {
       "id": "switching-to-folia",
       "year": "2023",
       "date": "June 25, 2023",
@@ -612,60 +294,31 @@
       "sources": []
     },
     {
-      "id": "ikea-godmode-exploit",
-      "year": "2023",
-      "date": "Mid 2023",
-      "title": "IKEA Discover the Godmode Exploit",
-      "tags": [
-        "Events"
-      ],
-      "description": [
-        "In mid 2023, the IKEA clan discovers the godmode exploit."
-      ],
-      "images": [],
-      "videos": [],
-      "sources": []
-    },
-    {
       "id": "5th-incursion",
       "year": "2023",
-      "date": "July 24, 2023",
+      "date": "July 29, 2023",
       "title": "5th Incursion",
       "tags": [
         "Events"
       ],
       "description": [
-        "On July 24, 2023, TheHorizonMc streamed on 6b6t, which prompted the 5th incursion. Incursion members tried to hunt him down, but he escaped spawn."
+        "On July 29, 2023, TheHorizonMc streamed on 6b6t, which prompted the 5th incursion. Incursion members tried to hunt him down, but he escaped spawn.",
+        "During the incursion, the server reached 300+ players online, without any queue, for the first time, making this a historic achievement for both the marketing efforts of 6b6t and the development team."
       ],
       "images": [],
       "videos": [],
-      "sources": []
+      "sources": ["https://6b.wiki/Wiki/5th_incursion"]
     },
     {
-      "id": "first-300-player-record",
+      "id": "lack-of-growth",
       "year": "2023",
-      "date": "August 2, 2023",
-      "title": "First 300+ Player Record",
+      "date": "December 2023 - February 2024",
+      "title": "Lack Of Growth",
       "tags": [
-        "Milestones"
+        "Community"
       ],
       "description": [
-        "The server reaches 300+ players for the first time, without any queue, making this a historic achievement for both the marketing efforts of 6b6t and the development team."
-      ],
-      "images": [],
-      "videos": [],
-      "sources": []
-    },
-    {
-      "id": "late-2023-exploits",
-      "year": "2023",
-      "date": "Late 2023",
-      "title": "Invisibility, Authentication and Teleport Exploits Discovered",
-      "tags": [
-        "Events"
-      ],
-      "description": [
-        "Invisibility, authentication and teleport exploits are discovered in late 2023."
+        "6b6t experiences the only period when the average player count was around 30. There is no growth without challenges."
       ],
       "images": [],
       "videos": [],
@@ -704,38 +357,6 @@
       ]
     },
     {
-      "id": "104-founded",
-      "year": "2024",
-      "date": "Mid 2024",
-      "title": "104 Is Founded",
-      "tags": [
-        "Community"
-      ],
-      "description": [
-        "104 is founded and begins the atlas project."
-      ],
-      "images": [],
-      "videos": [
-        "https://www.youtube.com/watch?v=w2oV6sHu1Q8"
-      ],
-      "sources": []
-    },
-    {
-      "id": "highway-men-begin",
-      "year": "2024",
-      "date": "Mid 2024",
-      "title": "The Highway Men Begin Their Work",
-      "tags": [
-        "Community"
-      ],
-      "description": [
-        "The Highway Men (THM) begin repairing and expanding highways."
-      ],
-      "images": [],
-      "videos": [],
-      "sources": []
-    },
-    {
       "id": "saviors-founded",
       "year": "2024",
       "date": "Mid 2024",
@@ -748,7 +369,24 @@
       ],
       "images": [],
       "videos": [],
-      "sources": []
+      "sources": ["https://6b.wiki/Wiki/Saviors"]
+    },
+    {
+      "id": "104-founded",
+      "year": "2024",
+      "date": "June 27, 2024",
+      "title": "104 Is Founded",
+      "tags": [
+        "Community"
+      ],
+      "description": [
+        "104 is founded and begins the atlas project."
+      ],
+      "images": [],
+      "videos": [
+        "https://www.youtube.com/watch?v=w2oV6sHu1Q8"
+      ],
+      "sources": ["https://6b.wiki/Wiki/104"]
     },
     {
       "id": "chunk-dupe-patched",
@@ -779,7 +417,7 @@
       "images": [],
       "videos": [],
       "sources": [
-        "https://6b.wiki/index.php?title=6b6t&oldid=4616"
+        "https://6b.wiki/Wiki/2024_Auth_Exploit"
       ]
     },
     {
@@ -792,21 +430,6 @@
       ],
       "description": [
         "The server updates to 1.21.1 on September 13th, 2024, under new software called \"Abomination\", a major version leap."
-      ],
-      "images": [],
-      "videos": [],
-      "sources": []
-    },
-    {
-      "id": "6th-incursion",
-      "year": "2024",
-      "date": "September 21-28, 2024",
-      "title": "6th Incursion",
-      "tags": [
-        "Events"
-      ],
-      "description": [
-        "From September 21 to 28, 2024, the 6th incursion was held in response to the Turkish streamer olimpos streaming on 6b6t."
       ],
       "images": [],
       "videos": [],
@@ -826,6 +449,21 @@
       "images": [],
       "videos": [],
       "sources": []
+    },
+    {
+      "id": "highway-men-begin",
+      "year": "2024",
+      "date": "October 19, 2024",
+      "title": "The Highway Men Begin Their Work",
+      "tags": [
+        "Community"
+      ],
+      "description": [
+        "The Highway Men (THM) begin repairing and expanding highways."
+      ],
+      "images": [],
+      "videos": [],
+      "sources": ["https://6b.wiki/Wiki/The_Highway_Men"]
     },
     {
       "id": "christmas-build-competition",
@@ -875,7 +513,7 @@
       "images": [],
       "videos": [],
       "sources": [
-        "https://6b.wiki/index.php?title=6b6t&oldid=4616"
+        "https://6b.wiki/Wiki/2025_Auth_Exploit"
       ]
     },
     {
@@ -904,21 +542,6 @@
       ],
       "description": [
         "A new build competition themed around Ancient Civilizations was started, encouraging creativity and community participation."
-      ],
-      "images": [],
-      "videos": [],
-      "sources": []
-    },
-    {
-      "id": "dyselexia-founded",
-      "year": "2025",
-      "date": "May 14, 2025",
-      "title": "Dyselexia Is Founded",
-      "tags": [
-        "Community"
-      ],
-      "description": [
-        "Dyselexia is founded on May 14, 2025."
       ],
       "images": [],
       "videos": [],
@@ -961,21 +584,6 @@
       "sources": []
     },
     {
-      "id": "ncr-founded",
-      "year": "2025",
-      "date": "June 2025",
-      "title": "NCR Is Founded",
-      "tags": [
-        "Community"
-      ],
-      "description": [
-        "NCR is founded in June 2025."
-      ],
-      "images": [],
-      "videos": [],
-      "sources": []
-    },
-    {
       "id": "update-1-21-7",
       "year": "2025",
       "date": "July 29, 2025",
@@ -993,17 +601,17 @@
     {
       "id": "cosmical-founded",
       "year": "2025",
-      "date": "July 2025",
+      "date": "July 4, 2025",
       "title": "Cosmical Is Founded",
       "tags": [
         "Community"
       ],
       "description": [
-        "Cosmical is founded in July 2025."
+        "Cosmical is founded on July 4, 2025."
       ],
       "images": [],
       "videos": [],
-      "sources": []
+      "sources": ["https://6b.wiki/Wiki/Cosmical"]
     },
     {
       "id": "saviors-disbanded",
@@ -1015,21 +623,6 @@
       ],
       "description": [
         "Saviors disbanded on August 13, 2025."
-      ],
-      "images": [],
-      "videos": [],
-      "sources": []
-    },
-    {
-      "id": "boatgate-incident",
-      "year": "2025",
-      "date": "August 30, 2025",
-      "title": "The Boatgate Incident",
-      "tags": [
-        "Events"
-      ],
-      "description": [
-        "On August 30, 2025, Xymb added a community-made BoatFly patch by IEatHex_, resulting in the Boatgate incident."
       ],
       "images": [],
       "videos": [],
@@ -1098,21 +691,6 @@
       "sources": []
     },
     {
-      "id": "admin-dupes-2025",
-      "year": "2025",
-      "date": "December 1, 2025",
-      "title": "Admin Dupes",
-      "tags": [
-        "Events"
-      ],
-      "description": [
-        "The 6b6t team adds several dupes during Christmas."
-      ],
-      "images": [],
-      "videos": [],
-      "sources": []
-    },
-    {
       "id": "dupe-event-dec-2025",
       "year": "2025",
       "date": "December 27, 2025",
@@ -1158,7 +736,7 @@
       ],
       "images": [],
       "videos": [],
-      "sources": []
+      "sources": ["https://6b.wiki/Wiki/2026_April_Fools_Event"]
     },
     {
       "id": "nether-roof-event-2026",
@@ -1170,12 +748,12 @@
       ],
       "description": [
         "From April 24 to 28, 2026, the Nether Roof Event was held.",
-        "Players built sky logos on the Nether Roof during the event."
+        "Players built sky logos and traveled far out from spawn utilizing the Nether Roof."
       ],
       "images": [],
       "videos": [],
       "sources": [
-        "https://6b.wiki/index.php?title=6b6t&oldid=4616"
+        "https://6b.wiki/Wiki/2026_Nether_Roof_Event"
       ]
     },
     {
@@ -1291,7 +869,7 @@
       ],
       "images": [],
       "videos": [],
-      "sources": []
+      "sources": ["https://6b.wiki/Wiki/7th_incursion"]
     },
     {
       "id": "anarchy-mod-dmca",
@@ -1321,7 +899,7 @@
         "Community"
       ],
       "description": [
-        "Players continue to develop extraordinary creations on the server, such as the largest map art, called \"big owo\", by fizzfluff or the largest spawn logo made by the 555."
+        "Players continue to develop extraordinary creations on the server, such as the largest map art, called \"big owo\", by fizzfluff."
       ],
       "images": [],
       "videos": [],
