@@ -46,25 +46,9 @@
       "sources": []
     },
     {
-      "id": "acquisitions",
-      "year": "2022",
-      "date": "March 2, 2022",
-      "title": "Acquisitions",
-      "tags": [
-        "Community"
-      ],
-      "description": [
-        "During the third month of its existence, 6b6t acquired 7b7t, which was about to shut down. The maps were merged together and history was saved.",
-        "The merge brought many different illegals from TheTroll2001 onto 6b6t."
-      ],
-      "images": [],
-      "videos": [],
-      "sources": []
-    },
-    {
       "id": "6b6t-pvp-server",
       "year": "2022",
-      "date": "June 3 - November 27, 2022",
+      "date": "February 25 - November 27, 2022",
       "title": "6b6t pvp server",
       "tags": [
         "Events"
@@ -82,6 +66,38 @@
       ],
       "videos": [],
       "sources": ["https://6b.wiki/Wiki/6b6t_pvp_server"]
+    },
+    {
+      "id": "acquisitions",
+      "year": "2022",
+      "date": "March 2, 2022",
+      "title": "Acquisitions",
+      "tags": [
+        "Community"
+      ],
+      "description": [
+        "During the third month of its existence, 6b6t acquired 7b7t, which was about to shut down. The maps were merged together and history was saved.",
+        "The merge brought many different illegals from TheTroll2001 onto 6b6t."
+      ],
+      "images": [],
+      "videos": [],
+      "sources": []
+    },
+    {
+      "id": "6b6t-creative-server",
+      "year": "2022",
+      "date": "April 5-28, 2022",
+      "title": "Creative server pilot",
+      "tags": [
+        "Events"
+      ],
+      "description": [
+        "From April 5, until April 28, 6b6t ran a no-rules creative plots server.",
+        "The server suffered from severe lag and exploits and was eventually shutdown."
+      ],
+      "images": [],
+      "videos": [],
+      "sources": ["https://6b.wiki/Wiki/6b6t_Creative_server"]
     },
     {
       "id": "colonizadores-join",
