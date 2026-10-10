@@ -84,7 +84,7 @@
       "date": "July 31, 2022",
       "title": "300+ players are online on 6b6t at the same time.",
       "tags": [
-        "Community"
+        "Milestones"
       ],
       "description": [
         "On an ordinary Sunday in July 2022, 6b6t reached over 300+ players online at the same time,",
@@ -163,6 +163,23 @@
       ],
       "images": [],
       "videos": [],
+      "sources": []
+    },
+    {
+      "id": "6b6t-testing-server",
+      "year": "2022",
+      "date": "November 12, 2022",
+      "title": "Preparing for 1000 player slots on 1.19.2",
+      "tags": [
+        "Milestones"
+      ],
+      "description": [
+        "6b6t launches a test server to experiment with having 16 chunk render distance, with 1000 player slots on 1.19.2."
+      ],
+      "images": [],
+      "videos": [
+        "https://www.youtube.com/watch?v=Hy2F9fL2HQ4"
+      ],
       "sources": []
     },
     {
