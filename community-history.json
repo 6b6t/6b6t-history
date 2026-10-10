@@ -23,9 +23,16 @@
       ],
       "description": [
         "Started by qbasty on January 16th, 2022, 6b6t immediately gained traction as the 1.12.2 anarchy server with /tpa and /home.",
-        "qbasty launched a new anarchy server under the domain 6b6t.org, starting the 6b6t that exists today."
+        "qbasty launched a new anarchy server under the domain 6b6t.org, starting the 6b6t that exists today.",
+        "The server would go public on January 17, reaching 50+ players on it's second day."
       ],
-      "images": [],
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/6b6t/6b6t-history/main/images/6b6t-reaching-50-players-on-second-day.png",
+          "alt": "6b6t reaching 50+ players on January 17, 2022",
+          "caption": "Screenshot by qbasty"
+        }
+      ],
       "videos": [],
       "sources": []
     },
