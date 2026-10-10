@@ -79,6 +79,28 @@
       ]
     },
     {
+      "id": "2022-300-players",
+      "year": "2022",
+      "date": "July 31, 2022",
+      "title": "300+ players are online on 6b6t at the same time.",
+      "tags": [
+        "Community"
+      ],
+      "description": [
+        "On an ordinary Sunday in July 2022, 6b6t reached over 300+ players online at the same time,",
+        "Although this did bring some server performance issues with it, resulting in a 15.75 TPS at times."
+      ],
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/6b6t/6b6t-history/main/images/2022-300-players-record.png",
+          "alt": "6b6t reaching 300+ players",
+          "caption": "Screenshot by qbasty on July 31, 2022"
+        }
+      ],
+      "videos": [],
+      "sources": []
+    },
+    {
       "id": "donkey-dupe-2022",
       "year": "2022",
       "date": "August 19, 2022",
