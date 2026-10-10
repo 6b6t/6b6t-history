@@ -62,6 +62,27 @@
       "sources": []
     },
     {
+      "id": "6b6t-pvp-server",
+      "year": "2022",
+      "date": "June 3 - November 27, 2022",
+      "title": "Acquisitions",
+      "tags": [
+        "Events"
+      ],
+      "description": [
+        "6b6t made a seperate server accessible via the lobby dedicated to pvpers. It was shutdown with intentions to come back on November 27 due to a hosting provider change."
+      ],
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/6b6t/6b6t-history/main/images/2022_pvp_server_lobby.png",
+          "alt": "2022 pvp server lobby",
+          "caption": "Screenshot by Fulgur"
+        }
+      ],
+      "videos": [],
+      "sources": ["https://6b.wiki/Wiki/6b6t_pvp_server"]
+    },
+    {
       "id": "colonizadores-join",
       "year": "2022",
       "date": "July 2022",
