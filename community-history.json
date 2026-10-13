@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastUpdated": "2026-10-03",
+  "lastUpdated": "2026-10-13",
   "editingGuide": [
     "Edit this file and return it for the weekly update. No website code is needed.",
     "Keep version at 1. Set lastUpdated to YYYY-MM-DD. Events appear in file order.",
@@ -72,7 +72,9 @@
         }
       ],
       "videos": [],
-      "sources": ["https://6b.wiki/Wiki/6b6t_pvp_server"]
+      "sources": [
+        "https://6b.wiki/Wiki/6b6t_pvp_server"
+      ]
     },
     {
       "id": "acquisitions",
@@ -83,8 +85,7 @@
         "Community"
       ],
       "description": [
-        "During the third month of its existence, 6b6t acquired 7b7t, which was about to shut down. The maps were merged together and history was saved.",
-        "The merge brought many different illegals from TheTroll2001 onto 6b6t."
+        "During the third month of its existence, 6b6t acquired 7b7t, which was about to shut down. The maps were merged together and history was saved."
       ],
       "images": [],
       "videos": [],
@@ -99,7 +100,7 @@
         "Community"
       ],
       "description": [
-        "The player 0007000 overflowed the map IDs, resetting all maparts on March 5, 2022."
+        "Map IDs overflowed, resetting maparts on March 5, 2022."
       ],
       "images": [],
       "videos": [],
@@ -119,7 +120,9 @@
       ],
       "images": [],
       "videos": [],
-      "sources": ["https://6b.wiki/Wiki/6b6t_Creative_server"]
+      "sources": [
+        "https://6b.wiki/Wiki/6b6t_Creative_server"
+      ]
     },
     {
       "id": "colonizadores-join",
@@ -427,22 +430,9 @@
       ],
       "images": [],
       "videos": [],
-      "sources": ["https://6b.wiki/Wiki/5th_incursion"]
-    },
-    {
-      "id": "lack-of-growth",
-      "year": "2023",
-      "date": "December 2023 - February 2024",
-      "title": "Lack Of Growth",
-      "tags": [
-        "Community"
-      ],
-      "description": [
-        "6b6t experiences the only period when the average player count was around 30. There is no growth without challenges."
-      ],
-      "images": [],
-      "videos": [],
-      "sources": []
+      "sources": [
+        "https://6b.wiki/Wiki/5th_incursion"
+      ]
     },
     {
       "id": "christmas-event",
@@ -454,6 +444,21 @@
       ],
       "description": [
         "A month-long Christmas event with daily quests, bringing the community together and offering new fun ways to spend time on the server."
+      ],
+      "images": [],
+      "videos": [],
+      "sources": []
+    },
+    {
+      "id": "lack-of-growth",
+      "year": "2023",
+      "date": "December 2023 - February 2024",
+      "title": "Lack Of Growth",
+      "tags": [
+        "Community"
+      ],
+      "description": [
+        "6b6t experiences the only period when the average player count was around 30. There is no growth without challenges."
       ],
       "images": [],
       "videos": [],
@@ -489,7 +494,9 @@
       ],
       "images": [],
       "videos": [],
-      "sources": ["https://6b.wiki/Wiki/Saviors"]
+      "sources": [
+        "https://6b.wiki/Wiki/Saviors"
+      ]
     },
     {
       "id": "104-founded",
@@ -506,7 +513,9 @@
       "videos": [
         "https://www.youtube.com/watch?v=w2oV6sHu1Q8"
       ],
-      "sources": ["https://6b.wiki/Wiki/104"]
+      "sources": [
+        "https://6b.wiki/Wiki/104"
+      ]
     },
     {
       "id": "chunk-dupe-patched",
@@ -583,7 +592,9 @@
       ],
       "images": [],
       "videos": [],
-      "sources": ["https://6b.wiki/Wiki/The_Highway_Men"]
+      "sources": [
+        "https://6b.wiki/Wiki/The_Highway_Men"
+      ]
     },
     {
       "id": "christmas-build-competition",
@@ -704,6 +715,23 @@
       "sources": []
     },
     {
+      "id": "cosmical-founded",
+      "year": "2025",
+      "date": "July 4, 2025",
+      "title": "Cosmical Is Founded",
+      "tags": [
+        "Community"
+      ],
+      "description": [
+        "Cosmical is founded on July 4, 2025."
+      ],
+      "images": [],
+      "videos": [],
+      "sources": [
+        "https://6b.wiki/Wiki/Cosmical"
+      ]
+    },
+    {
       "id": "update-1-21-7",
       "year": "2025",
       "date": "July 29, 2025",
@@ -717,21 +745,6 @@
       "images": [],
       "videos": [],
       "sources": []
-    },
-    {
-      "id": "cosmical-founded",
-      "year": "2025",
-      "date": "July 4, 2025",
-      "title": "Cosmical Is Founded",
-      "tags": [
-        "Community"
-      ],
-      "description": [
-        "Cosmical is founded on July 4, 2025."
-      ],
-      "images": [],
-      "videos": [],
-      "sources": ["https://6b.wiki/Wiki/Cosmical"]
     },
     {
       "id": "saviors-disbanded",
@@ -856,7 +869,9 @@
       ],
       "images": [],
       "videos": [],
-      "sources": ["https://6b.wiki/Wiki/2026_April_Fools_Event"]
+      "sources": [
+        "https://6b.wiki/Wiki/2026_April_Fools_Event"
+      ]
     },
     {
       "id": "nether-roof-event-2026",
@@ -989,7 +1004,9 @@
       ],
       "images": [],
       "videos": [],
-      "sources": ["https://6b.wiki/Wiki/7th_incursion"]
+      "sources": [
+        "https://6b.wiki/Wiki/7th_incursion"
+      ]
     },
     {
       "id": "anarchy-mod-dmca",
