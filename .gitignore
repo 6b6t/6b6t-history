@@ -1,3 +1,8 @@
 node_modules/
 .env
 *.tmp
+
+# Share the project icon while keeping local IDE settings private.
+!/.idea/
+/.idea/*
+!/.idea/icon.svg
