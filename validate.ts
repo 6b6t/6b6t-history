@@ -1,8 +1,10 @@
-import { historyDocumentSchema } from "./schema";
+import { Result, SchemaIssue } from "effect";
+import { decodeHistoryDocument } from "./schema";
 
-const result = historyDocumentSchema.safeParse(await Bun.file("community-history.json").json());
-if (!result.success) {
-  for (const issue of result.error.issues) console.error(`${issue.path.join(".")}: ${issue.message}`);
+const result = decodeHistoryDocument(await Bun.file("community-history.json").json());
+if (Result.isFailure(result)) {
+  const { issues } = SchemaIssue.makeFormatterStandardSchemaV1()(result.failure.issue);
+  for (const issue of issues) console.error(`${issue.path?.join(".") ?? ""}: ${issue.message}`);
   process.exit(1);
 }
-console.log(`Validated ${result.data.events.length} history events.`);
+console.log(`Validated ${result.success.events.length} history events.`);
