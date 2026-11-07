@@ -1,3 +1,12 @@
+## History validation
+
+- Use `validation.ts` for file loading, JSON parsing, schema decoding, and command reporting as native Effect programs.
+- Supply file and output capabilities through `HistoryIO`. Keep Bun and console adapters in `validate.ts`.
+- Keep the single Effect runtime and process exit status at the CLI entry point.
+- Wait for a submitted file read before cancellation returns. Do not print a result after cancellation.
+- Keep `schema.ts` and its synchronous decoder compatible with the website importer. Do not change history data during runtime refactors.
+- Run `bun run check` and `bun run test` from the repository root. This data project has no build command.
+
 ## Review and deployment approval
 
 Before staging or deploying any change, complete these steps in order:

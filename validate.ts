@@ -1,10 +1,18 @@
-import { Result, SchemaIssue } from "effect";
-import { decodeHistoryDocument } from "./schema";
+import { Effect } from "effect";
+import { historyIOLayer, reportHistoryValidation } from "./validation";
 
-const result = decodeHistoryDocument(await Bun.file("community-history.json").json());
-if (Result.isFailure(result)) {
-  const { issues } = SchemaIssue.makeFormatterStandardSchemaV1()(result.failure.issue);
-  for (const issue of issues) console.error(`${issue.path?.join(".") ?? ""}: ${issue.message}`);
-  process.exit(1);
-}
-console.log(`Validated ${result.success.events.length} history events.`);
+process.exitCode = await Effect.runPromise(
+  reportHistoryValidation().pipe(
+    Effect.provide(
+      historyIOLayer({
+        readText: (path) => Bun.file(path).text(),
+        write: (stream, line) => {
+          if (stream === "stdout") console.log(line);
+          else console.error(line);
+        },
+      }),
+    ),
+    // A broken output stream also fails the command. Do not retry its writes.
+    Effect.orElseSucceed(() => 1 as const),
+  ),
+);
