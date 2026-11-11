@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastUpdated": "2026-10-13",
+  "lastUpdated": "2026-11-11",
   "editingGuide": [
     "Edit this file and return it for the weekly update. No website code is needed.",
     "Keep version at 1. Set lastUpdated to YYYY-MM-DD. Events appear in file order.",
@@ -1025,6 +1025,21 @@
         "https://github.com/github/dmca/blob/master/2026/09/2026-09-17-mojang.md",
         "https://blog.6b6t.org/mojang-anarchymod-6b6t-dmca/"
       ]
+    },
+    {
+      "id": "update-26-3",
+      "year": "2026",
+      "date": "October 26, 2026",
+      "title": "6b6t Updates to 26.3",
+      "tags": [
+        "Events"
+      ],
+      "description": [
+        "On October 26, 2026, 6b6t updated to 26.3."
+      ],
+      "images": [],
+      "videos": [],
+      "sources": []
     },
     {
       "id": "largest-creations",
