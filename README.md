@@ -60,3 +60,34 @@ bun run ci
 Review the downloaded content diff, commit, and deploy through the normal website workflow. The importer validates the complete download before replacing the website's checked-in copy. The website continues serving its last imported content if this repository is unavailable.
 
 `schema.ts` mirrors the website's history validation contract. Keep both schemas aligned when changing the file format; contributors normally only edit the JSON file.
+
+## Local Git checks
+
+Install [Lefthook](https://lefthook.dev/installation/) 1.13.6 or newer and Python 3.10 or newer.
+Run `lefthook install` once in each clone or linked worktree.
+
+The commit hook checks staged whitespace without rewriting or staging files.
+The push hook reads Git's exact ref updates and selects existing checks for changed paths, including deletions.
+New remote refs and unavailable baselines check the complete tree.
+Check out the commit that you push, then commit or stash tracked and untracked changes.
+This makes the working files match the pushed revision. Deletion-only pushes do not run code checks.
+Hook regression tests run for pushes with changed files. Documentation changes do not compile the application. CI remains enabled.
+
+Install Bun and run `bun install --frozen-lockfile`.
+History data, schema, validator, dependency, and image changes run `bun run check` and `bun run test`.
+These commands validate the published history and test schema and CLI behavior.
+This repository has no build step.
+
+Preview the complete local check plan:
+
+```bash
+python3 scripts/check-push.py --all --dry-run --verbose
+```
+
+Run all checks against working files before committing:
+
+```bash
+python3 scripts/check-push.py --all
+```
+
+The explicit `--all` mode allows uncommitted files. Normal push hooks require a clean working tree.

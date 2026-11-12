@@ -6,3 +6,6 @@ node_modules/
 !/.idea/
 /.idea/*
 !/.idea/icon.svg
+
+# Python hook test caches
+__pycache__/
