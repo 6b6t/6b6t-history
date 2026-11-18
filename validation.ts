@@ -82,7 +82,11 @@ export const reportHistoryValidation = Effect.fn("History.reportValidation")(fun
   if (failure instanceof Schema.SchemaError) {
     const { issues } = SchemaIssue.makeFormatterStandardSchemaV1()(failure.issue);
     for (const issue of issues) {
-      yield* io.write("stderr", `${issue.path?.join(".") ?? ""}: ${issue.message}`);
+      const issuePath =
+        issue.path
+          ?.map((segment) => String(typeof segment === "object" ? segment.key : segment))
+          .join(".") ?? "";
+      yield* io.write("stderr", `${issuePath}: ${issue.message}`);
     }
   } else {
     yield* io.write("stderr", failure.message);
