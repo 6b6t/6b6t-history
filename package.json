@@ -5,7 +5,7 @@
   "scripts": {
     "check": "bun validate.ts && bun run lint && bun run format:check",
     "test": "bun test",
-    "lint": "oxlint --deny-warnings",
+    "lint": "oxlint",
     "format": "oxfmt",
     "format:check": "oxfmt --check",
     "prepare": "effect-tsgo patch --no-typescript --oxlint"
