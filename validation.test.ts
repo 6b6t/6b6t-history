@@ -2,7 +2,9 @@ import { expect, test } from "bun:test";
 import { mkdtemp, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import path from "node:path";
+
 import { Cause, Effect, Exit, Result } from "effect";
+
 import document from "./community-history.json";
 import {
   HistoryJsonError,
@@ -21,7 +23,9 @@ function validationHost(readText: (path: string) => PromiseLike<string>) {
     output,
     layer: historyIOLayer({
       readText,
-      write: (stream, line) => { output.push({ stream, line }); },
+      write: (stream, line) => {
+        output.push({ stream, line });
+      },
     }),
   };
 }
@@ -40,39 +44,51 @@ test("validates the published history and reports its complete event count", asy
 
 test("unreadable files retain a typed cause without exposing it in command output", async () => {
   const denied = Object.assign(new Error("private filesystem details"), { code: "EACCES" });
-  const host = validationHost(async () => { throw denied; });
-  const result = await Effect.runPromise(validateHistory("private.json").pipe(
-    Effect.result,
-    Effect.provide(host.layer),
-  ));
+  const host = validationHost(async () => {
+    throw denied;
+  });
+  const result = await Effect.runPromise(
+    validateHistory("private.json").pipe(Effect.result, Effect.provide(host.layer)),
+  );
   expect(Result.isFailure(result)).toBe(true);
   if (Result.isFailure(result)) {
     expect(result.failure).toBeInstanceOf(HistoryReadError);
     expect(result.failure.cause).toBe(denied);
   }
-  expect(await Effect.runPromise(reportHistoryValidation("private.json").pipe(
-    Effect.provide(host.layer),
-  ))).toBe(1);
-  expect(host.output).toEqual([{ stream: "stderr", line: "Could not read history file: private.json" }]);
+  expect(
+    await Effect.runPromise(
+      reportHistoryValidation("private.json").pipe(Effect.provide(host.layer)),
+    ),
+  ).toBe(1);
+  expect(host.output).toEqual([
+    { stream: "stderr", line: "Could not read history file: private.json" },
+  ]);
 });
 
 test("malformed JSON has a different typed failure from file access and schema errors", async () => {
   const host = validationHost(async () => "{");
-  const result = await Effect.runPromise(validateHistory("broken.json").pipe(
-    Effect.result,
-    Effect.provide(host.layer),
-  ));
+  const result = await Effect.runPromise(
+    validateHistory("broken.json").pipe(Effect.result, Effect.provide(host.layer)),
+  );
   expect(Result.isFailure(result)).toBe(true);
   if (Result.isFailure(result)) expect(result.failure).toBeInstanceOf(HistoryJsonError);
-  expect(await Effect.runPromise(reportHistoryValidation("broken.json").pipe(
-    Effect.provide(host.layer),
-  ))).toBe(1);
-  expect(host.output).toEqual([{ stream: "stderr", line: "Invalid JSON in history file: broken.json" }]);
+  expect(
+    await Effect.runPromise(
+      reportHistoryValidation("broken.json").pipe(Effect.provide(host.layer)),
+    ),
+  ).toBe(1);
+  expect(host.output).toEqual([
+    { stream: "stderr", line: "Invalid JSON in history file: broken.json" },
+  ]);
 });
 
 test("schema diagnostics retain all field paths and reject excess properties", async () => {
-  const host = validationHost(async () => JSON.stringify({ ...document, version: 2, unexpected: true }));
-  expect(await Effect.runPromise(reportHistoryValidation().pipe(Effect.provide(host.layer)))).toBe(1);
+  const host = validationHost(async () =>
+    JSON.stringify({ ...document, version: 2, unexpected: true }),
+  );
+  expect(await Effect.runPromise(reportHistoryValidation().pipe(Effect.provide(host.layer)))).toBe(
+    1,
+  );
   expect(host.output).toEqual([
     { stream: "stderr", line: "unexpected: Expected no excess property" },
     { stream: "stderr", line: "version: Expected 1" },
@@ -81,13 +97,20 @@ test("schema diagnostics retain all field paths and reject excess properties", a
 
 test("failed reporting is typed and does not retry a write or print a success", async () => {
   let writes = 0;
-  const result = await Effect.runPromise(reportHistoryValidation().pipe(
-    Effect.provide(historyIOLayer({
-      readText: async () => serializedHistory,
-      write: () => { writes++; throw new Error("closed output"); },
-    })),
-    Effect.result,
-  ));
+  const result = await Effect.runPromise(
+    reportHistoryValidation().pipe(
+      Effect.provide(
+        historyIOLayer({
+          readText: async () => serializedHistory,
+          write: () => {
+            writes++;
+            throw new Error("closed output");
+          },
+        }),
+      ),
+      Effect.result,
+    ),
+  );
   expect(Result.isFailure(result)).toBe(true);
   if (Result.isFailure(result)) {
     expect(result.failure).toBeInstanceOf(HistoryReportError);
@@ -99,14 +122,24 @@ test("failed reporting is typed and does not retry a write or print a success", 
 test("cancellation waits for a submitted read and never reports a stale result", async () => {
   let start!: () => void;
   let finish!: (text: string) => void;
-  const started = new Promise<void>((resolve) => { start = resolve; });
-  const pending = new Promise<string>((resolve) => { finish = resolve; });
-  const host = validationHost(() => { start(); return pending; });
+  const started = new Promise<void>((resolve) => {
+    start = resolve;
+  });
+  const pending = new Promise<string>((resolve) => {
+    finish = resolve;
+  });
+  const host = validationHost(() => {
+    start();
+    return pending;
+  });
   const controller = new AbortController();
   let settled = false;
   const result = Effect.runPromiseExit(reportHistoryValidation().pipe(Effect.provide(host.layer)), {
     signal: controller.signal,
-  }).then((exit) => { settled = true; return exit; });
+  }).then((exit) => {
+    settled = true;
+    return exit;
+  });
   await started;
   controller.abort();
   await Promise.resolve();

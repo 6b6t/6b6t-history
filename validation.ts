@@ -1,4 +1,5 @@
 import { Context, Data, Effect, Layer, Result, Schema, SchemaIssue } from "effect";
+
 import { historyDocumentSchema } from "./schema";
 
 export class HistoryReadError extends Data.TaggedError("HistoryReadError")<{
@@ -67,24 +68,24 @@ export const validateHistory = Effect.fn("History.validate")(function* (path: st
   })(input);
 });
 
-export const reportHistoryValidation = Effect.fn("History.reportValidation")(
-  function* (path = "community-history.json") {
-    const io = yield* HistoryIO;
-    const result = yield* Effect.result(validateHistory(path));
-    if (Result.isSuccess(result)) {
-      yield* io.write("stdout", `Validated ${result.success.events.length} history events.`);
-      return 0 as const;
-    }
+export const reportHistoryValidation = Effect.fn("History.reportValidation")(function* (
+  path = "community-history.json",
+) {
+  const io = yield* HistoryIO;
+  const result = yield* Effect.result(validateHistory(path));
+  if (Result.isSuccess(result)) {
+    yield* io.write("stdout", `Validated ${result.success.events.length} history events.`);
+    return 0 as const;
+  }
 
-    const failure = result.failure;
-    if (failure instanceof Schema.SchemaError) {
-      const { issues } = SchemaIssue.makeFormatterStandardSchemaV1()(failure.issue);
-      for (const issue of issues) {
-        yield* io.write("stderr", `${issue.path?.join(".") ?? ""}: ${issue.message}`);
-      }
-    } else {
-      yield* io.write("stderr", failure.message);
+  const failure = result.failure;
+  if (failure instanceof Schema.SchemaError) {
+    const { issues } = SchemaIssue.makeFormatterStandardSchemaV1()(failure.issue);
+    for (const issue of issues) {
+      yield* io.write("stderr", `${issue.path?.join(".") ?? ""}: ${issue.message}`);
     }
-    return 1 as const;
-  },
-);
+  } else {
+    yield* io.write("stderr", failure.message);
+  }
+  return 1 as const;
+});

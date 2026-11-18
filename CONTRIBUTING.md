@@ -18,7 +18,6 @@ Share **`community-history.json`** with the history team. It is the complete edi
 
 **Evidence.** Build and test locally, and paste the evidence (commands run, logs, screenshots) in the PR.
 
-
 ## Writing stories
 
 - Keep `version` at `1` and set `lastUpdated` to `YYYY-MM-DD`.
@@ -35,8 +34,18 @@ Example media fields (replace the image URL with the real hosted image):
 
 ```json
 {
-  "description": ["A short introduction.", "A longer account of what happened.", "More context, participants and the result."],
-  "images": [{"url": "https://example.org/history/photo.jpg", "alt": "Describe the actual image", "caption": "Image credit and context"}],
+  "description": [
+    "A short introduction.",
+    "A longer account of what happened.",
+    "More context, participants and the result."
+  ],
+  "images": [
+    {
+      "url": "https://example.org/history/photo.jpg",
+      "alt": "Describe the actual image",
+      "caption": "Image credit and context"
+    }
+  ],
   "videos": ["https://youtu.be/XSL6s1TKKpc"],
   "sources": []
 }

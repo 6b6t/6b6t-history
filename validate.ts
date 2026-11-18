@@ -1,4 +1,5 @@
 import { Effect } from "effect";
+
 import { historyIOLayer, reportHistoryValidation } from "./validation";
 
 process.exitCode = await Effect.runPromise(

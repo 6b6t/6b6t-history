@@ -1,5 +1,7 @@
 import { expect, test } from "bun:test";
+
 import { Result } from "effect";
+
 import document from "./community-history.json";
 import { decodeHistoryDocument } from "./schema";
 

@@ -23,4 +23,3 @@ Closes #
 
 - [ ] Commits follow Conventional Commits (`type(scope): description`). CI enforces this.
 - [ ] Built and tested locally with this repo's standard commands. Paste evidence (commands run, logs, screenshots):
-
