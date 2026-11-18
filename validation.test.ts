@@ -31,9 +31,9 @@ function validationHost(readText: (path: string) => PromiseLike<string>) {
 }
 
 test("validates the published history and reports its complete event count", async () => {
-  const host = validationHost(async (file) => {
+  const host = validationHost((file) => {
     expect(file).toBe("community-history.json");
-    return serializedHistory;
+    return Promise.resolve(serializedHistory);
   });
   const code = await Effect.runPromise(reportHistoryValidation().pipe(Effect.provide(host.layer)));
   expect(code).toBe(0);
@@ -44,9 +44,7 @@ test("validates the published history and reports its complete event count", asy
 
 test("unreadable files retain a typed cause without exposing it in command output", async () => {
   const denied = Object.assign(new Error("private filesystem details"), { code: "EACCES" });
-  const host = validationHost(async () => {
-    throw denied;
-  });
+  const host = validationHost(() => Promise.reject(denied));
   const result = await Effect.runPromise(
     validateHistory("private.json").pipe(Effect.result, Effect.provide(host.layer)),
   );
@@ -66,7 +64,7 @@ test("unreadable files retain a typed cause without exposing it in command outpu
 });
 
 test("malformed JSON has a different typed failure from file access and schema errors", async () => {
-  const host = validationHost(async () => "{");
+  const host = validationHost(() => Promise.resolve("{"));
   const result = await Effect.runPromise(
     validateHistory("broken.json").pipe(Effect.result, Effect.provide(host.layer)),
   );
@@ -83,8 +81,8 @@ test("malformed JSON has a different typed failure from file access and schema e
 });
 
 test("schema diagnostics retain all field paths and reject excess properties", async () => {
-  const host = validationHost(async () =>
-    JSON.stringify({ ...document, version: 2, unexpected: true }),
+  const host = validationHost(() =>
+    Promise.resolve(JSON.stringify({ ...document, version: 2, unexpected: true })),
   );
   expect(await Effect.runPromise(reportHistoryValidation().pipe(Effect.provide(host.layer)))).toBe(
     1,
@@ -101,7 +99,7 @@ test("failed reporting is typed and does not retry a write or print a success", 
     reportHistoryValidation().pipe(
       Effect.provide(
         historyIOLayer({
-          readText: async () => serializedHistory,
+          readText: () => Promise.resolve(serializedHistory),
           write: () => {
             writes++;
             throw new Error("closed output");

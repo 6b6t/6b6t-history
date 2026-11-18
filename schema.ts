@@ -6,14 +6,15 @@ export function youtubeEmbedUrl(value: string): string | null {
     if (url.protocol !== "https:" || url.username || url.password || url.port) return null;
     const host = url.hostname.toLowerCase();
     const parts = url.pathname.split("/").filter(Boolean);
+    const [first = "", second] = parts;
     const id =
       host === "youtu.be" && parts.length === 1
-        ? parts[0]
+        ? first
         : ["youtube.com", "www.youtube.com", "m.youtube.com"].includes(host)
           ? url.pathname === "/watch"
             ? url.searchParams.get("v")
-            : ["embed", "shorts", "live"].includes(parts[0]) && parts.length === 2
-              ? parts[1]
+            : ["embed", "shorts", "live"].includes(first) && parts.length === 2
+              ? second
               : null
           : null;
     return id && /^[A-Za-z0-9_-]{11}$/.test(id)

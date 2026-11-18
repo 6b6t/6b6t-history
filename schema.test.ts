@@ -5,20 +5,26 @@ import { Result } from "effect";
 import document from "./community-history.json";
 import { decodeHistoryDocument } from "./schema";
 
+function firstEvent<T>(events: T[]): T {
+  const [event] = events;
+  if (event === undefined) throw new Error("community-history.json has no events");
+  return event;
+}
+
 test("the published history validates and trims text", () => {
   const input = structuredClone(document);
-  input.events[0].title = "  Test title  ";
+  firstEvent(input.events).title = "  Test title  ";
   const result = decodeHistoryDocument(input);
   expect(Result.isSuccess(result)).toBe(true);
-  if (Result.isSuccess(result)) expect(result.success.events[0].title).toBe("Test title");
+  if (Result.isSuccess(result)) expect(result.success.events[0]?.title).toBe("Test title");
 });
 
 test("rejects duplicate IDs and case-insensitive duplicate tags", () => {
   const duplicate = structuredClone(document);
-  duplicate.events.push(duplicate.events[0]);
+  duplicate.events.push(firstEvent(duplicate.events));
   expect(Result.isFailure(decodeHistoryDocument(duplicate))).toBe(true);
   const tags = structuredClone(document);
-  tags.events[0].tags = ["Builds", "builds"];
+  firstEvent(tags.events).tags = ["Builds", "builds"];
   expect(Result.isFailure(decodeHistoryDocument(tags))).toBe(true);
 });
 
