@@ -1,0 +1,23 @@
+{
+  "$schema": "./node_modules/@effect/tsgo/oxlint-schema.json",
+  "extends": ["./node_modules/@effect/tsgo/oxlint-presets/recommended.json"],
+  "plugins": ["typescript", "unicorn", "oxc", "import", "promise", "effecttsgo"],
+  "categories": {
+    "correctness": "error",
+    "suspicious": "error"
+  },
+  "options": {
+    "typeAware": true,
+    "reportUnusedDisableDirectives": "error"
+  },
+  "env": {
+    "builtin": true
+  },
+  "ignorePatterns": [],
+  "rules": {
+    "effecttsgo/any-unknown-in-error-context": "off",
+    "effecttsgo/unsafe-effect-type-assertion": "off",
+    "effecttsgo/strict-effect-provide": "off",
+    "typescript/no-base-to-string": "off"
+  }
+}

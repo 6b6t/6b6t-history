@@ -13,7 +13,15 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 RULES = [
     (
-        ["community-history.json", "*.ts", "package.json", "bun.lock", "images/*"],
+        [
+            "community-history.json",
+            "*.ts",
+            "package.json",
+            "bun.lock",
+            "images/*",
+            ".oxlintrc.json",
+            ".oxfmtrc.json",
+        ],
         [(".", ["bun", "run", "check"]), (".", ["bun", "run", "test"])],
     )
 ]

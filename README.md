@@ -48,6 +48,8 @@ bun install --frozen-lockfile
 bun run check
 ```
 
+`bun run check` validates the history, then runs Oxlint and checks formatting with Oxfmt. Run `bun run format` to fix formatting.
+
 ## Publish to the website
 
 The website automatically fetches approved content from `main` every Monday at 03:17 UTC (09:17 Bangladesh time), and on every normal production deployment. GitHub may delay scheduled runs. Validation must pass before deployment; a failed fetch or validation leaves the running website unchanged. Maintainers can also import locally:
@@ -74,7 +76,7 @@ This makes the working files match the pushed revision. Deletion-only pushes do 
 Hook regression tests run for pushes with changed files. Documentation changes do not compile the application. CI remains enabled.
 
 Install Bun and run `bun install --frozen-lockfile`.
-History data, schema, validator, dependency, and image changes run `bun run check` and `bun run test`.
+History data, schema, validator, dependency, image, and Oxlint or Oxfmt config changes run `bun run check` and `bun run test`.
 These commands validate the published history and test schema and CLI behavior.
 This repository has no build step.
 

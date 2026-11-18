@@ -3,10 +3,20 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "check": "bun validate.ts",
-    "test": "bun test"
+    "check": "bun validate.ts && bun run lint && bun run format:check",
+    "test": "bun test",
+    "lint": "oxlint --deny-warnings",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
+    "prepare": "effect-tsgo patch --no-typescript --oxlint"
   },
   "dependencies": {
     "effect": "4.1.4"
+  },
+  "devDependencies": {
+    "@effect/tsgo": "0.70.0",
+    "oxfmt": "0.79.0",
+    "oxlint": "1.94.0",
+    "oxlint-tsgolint": "7.0.2007"
   }
 }
