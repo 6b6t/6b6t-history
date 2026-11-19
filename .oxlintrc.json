@@ -95,7 +95,14 @@
     "eslint/no-negated-condition": "off",
     "unicorn/no-negated-condition": "off",
     "eslint/require-await": "off",
-    "typescript/strict-boolean-expressions": "off"
+    "typescript/strict-boolean-expressions": "off",
+    "typescript/consistent-type-definitions": ["error", "interface"],
+    "typescript/array-type": "error",
+    "typescript/no-inferrable-types": "error",
+    "typescript/prefer-function-type": "error",
+    "typescript/consistent-indexed-object-style": "error",
+    "unicorn/switch-case-braces": "error",
+    "eslint/no-useless-assignment": "error"
   },
   "overrides": [
     {
