@@ -2,6 +2,9 @@ import { Context, Data, Effect, Layer, Result, Schema, SchemaIssue } from "effec
 
 import { historyDocumentSchema } from "./schema";
 
+const DEFAULT_PATH = "community-history.json";
+const decodeJson = Schema.decodeUnknownEffect(Schema.fromJsonString(Schema.Unknown));
+
 export class HistoryReadError extends Data.TaggedError("HistoryReadError")<{
   readonly path: string;
   readonly cause: unknown;
@@ -49,7 +52,9 @@ export function historyIOLayer(host: {
       }).pipe(Effect.uninterruptible),
     write: (stream, line) =>
       Effect.try({
-        try: () => host.write(stream, line),
+        try: () => {
+          host.write(stream, line);
+        },
         catch: (cause) => new HistoryReportError({ stream, cause }),
       }),
   });
@@ -58,10 +63,9 @@ export function historyIOLayer(host: {
 export const validateHistory = Effect.fn("History.validate")(function* (path: string) {
   const io = yield* HistoryIO;
   const text = yield* io.readText(path);
-  const input: unknown = yield* Effect.try({
-    try: () => JSON.parse(text),
-    catch: (cause) => new HistoryJsonError({ path, cause }),
-  });
+  const input = yield* decodeJson(text).pipe(
+    Effect.mapError((cause) => new HistoryJsonError({ path, cause })),
+  );
   return yield* Schema.decodeUnknownEffect(historyDocumentSchema, {
     onExcessProperty: "error",
     errors: "all",
@@ -69,7 +73,7 @@ export const validateHistory = Effect.fn("History.validate")(function* (path: st
 });
 
 export const reportHistoryValidation = Effect.fn("History.reportValidation")(function* (
-  path = "community-history.json",
+  path: string = DEFAULT_PATH,
 ) {
   const io = yield* HistoryIO;
   const result = yield* Effect.result(validateHistory(path));

@@ -17,7 +17,7 @@ export function youtubeEmbedUrl(value: string): string | null {
               ? second
               : null
           : null;
-    return id && /^[A-Za-z0-9_-]{11}$/.test(id)
+    return id && /^[A-Za-z0-9_-]{11}$/u.test(id)
       ? `https://www.youtube-nocookie.com/embed/${id}?rel=0`
       : null;
   } catch {
@@ -41,14 +41,14 @@ const httpsUrl = Schema.String.check(
 const imageUrl = Schema.Union([
   httpsUrl,
   Schema.String.check(
-    Schema.isPattern(/^\/(?!\/)[^\s\\]+$/, {
+    Schema.isPattern(/^\/(?!\/)[^\s\\]+$/u, {
       message: "Use a site-relative path or public HTTPS image URL",
     }),
   ),
 ]);
 const calendarDate = Schema.String.check(
   Schema.makeFilter((value) => {
-    if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return "Use a valid calendar date";
+    if (!/^\d{4}-\d{2}-\d{2}$/u.test(value)) return "Use a valid calendar date";
     const date = new Date(`${value}T00:00:00Z`);
     return (
       (!Number.isNaN(date.getTime()) && date.toISOString().slice(0, 10) === value) ||
@@ -65,11 +65,11 @@ export const historyDocumentSchema = Schema.Struct({
     Schema.Array(
       Schema.Struct({
         id: Schema.String.check(
-          Schema.isPattern(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, {
+          Schema.isPattern(/^[a-z0-9]+(?:-[a-z0-9]+)*$/u, {
             message: "Use a unique lowercase ID with hyphens",
           }),
         ),
-        year: Schema.String.check(Schema.isPattern(/^(?:\d{4}|Ongoing)$/)),
+        year: Schema.String.check(Schema.isPattern(/^(?:\d{4}|Ongoing)$/u)),
         date: text,
         title: text,
         tags: Schema.mutable(Schema.Array(text)).check(
@@ -120,7 +120,7 @@ export const decodeHistoryDocument = Schema.decodeUnknownResult(historyDocumentS
 export type HistoryEvent = (typeof historyDocumentSchema.Type)["events"][number];
 
 export function filterHistory(events: HistoryEvent[], tags: string[]): HistoryEvent[] {
-  return tags.length
+  return tags.length > 0
     ? events.filter((event) => tags.some((tag) => event.tags.includes(tag)))
     : events;
 }
