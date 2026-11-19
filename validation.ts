@@ -43,7 +43,7 @@ export class HistoryIO extends Context.Service<
       line: string,
     ) => Effect.Effect<void, HistoryReportError>;
   }
->()("history/HistoryIO") {}
+>()("6b6t-history/validation/HistoryIO") {}
 
 export function historyIOLayer(host: {
   readText: (path: string) => PromiseLike<string>;
@@ -54,14 +54,14 @@ export function historyIOLayer(host: {
     readText: (path) =>
       Effect.tryPromise({
         try: async () => host.readText(path),
-        catch: (cause) => new HistoryReadError({ path, cause }),
+        catch: (cause) => HistoryReadError.make({ path, cause }),
       }).pipe(Effect.uninterruptible),
     write: (stream, line) =>
       Effect.try({
         try: () => {
           host.write(stream, line);
         },
-        catch: (cause) => new HistoryReportError({ stream, cause }),
+        catch: (cause) => HistoryReportError.make({ stream, cause }),
       }),
   });
 }
@@ -70,7 +70,7 @@ export const validateHistory = Effect.fn("History.validate")(function* (path: st
   const io = yield* HistoryIO;
   const text = yield* io.readText(path);
   const input = yield* decodeJson(text).pipe(
-    Effect.mapError((cause) => new HistoryJsonError({ path, cause })),
+    Effect.mapError((cause) => HistoryJsonError.make({ path, cause })),
   );
   return yield* Schema.decodeUnknownEffect(historyDocumentSchema, {
     onExcessProperty: "error",

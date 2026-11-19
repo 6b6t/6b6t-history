@@ -1,9 +1,10 @@
-import { Schema } from "effect";
+import { DateTime, Option, Schema } from "effect";
 
 export function youtubeEmbedUrl(value: string): string | null {
   try {
     const url = new URL(value);
-    if (url.protocol !== "https:" || url.username || url.password || url.port) return null;
+    if (url.protocol !== "https:" || url.username !== "" || url.password !== "" || url.port !== "")
+      return null;
     const host = url.hostname.toLowerCase();
     const parts = url.pathname.split("/").filter(Boolean);
     const [first = "", second] = parts;
@@ -17,7 +18,7 @@ export function youtubeEmbedUrl(value: string): string | null {
               ? second
               : null
           : null;
-    return id && /^[A-Za-z0-9_-]{11}$/u.test(id)
+    return typeof id === "string" && /^[A-Za-z0-9_-]{11}$/u.test(id)
       ? `https://www.youtube-nocookie.com/embed/${id}?rel=0`
       : null;
   } catch {
@@ -31,7 +32,8 @@ const httpsUrl = Schema.String.check(
     try {
       const url = new URL(value);
       return (
-        (url.protocol === "https:" && !url.username && !url.password) || "Use a public HTTPS URL"
+        (url.protocol === "https:" && url.username === "" && url.password === "") ||
+        "Use a public HTTPS URL"
       );
     } catch {
       return "Use a public HTTPS URL";
@@ -49,9 +51,9 @@ const imageUrl = Schema.Union([
 const calendarDate = Schema.String.check(
   Schema.makeFilter((value) => {
     if (!/^\d{4}-\d{2}-\d{2}$/u.test(value)) return "Use a valid calendar date";
-    const date = new Date(`${value}T00:00:00Z`);
+    const date = DateTime.make(`${value}T00:00:00Z`);
     return (
-      (!Number.isNaN(date.getTime()) && date.toISOString().slice(0, 10) === value) ||
+      (Option.isSome(date) && DateTime.formatIsoDateUtc(date.value) === value) ||
       "Use a valid calendar date"
     );
   }),
