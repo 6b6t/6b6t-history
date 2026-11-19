@@ -44,6 +44,7 @@ test("rejects unknown fields at every object boundary", () => {
 
 test("rejects unsafe URLs and invalid calendar dates", () => {
   for (const url of [
+    // oxlint-disable-next-line eslint/no-script-url -- Exercise rejection of a script URL.
     "javascript:alert(1)",
     "//evil.test/image.png",
     "https://user:pass@example.com/image.png",

@@ -1,32 +1,38 @@
-import { Context, Data, Effect, Layer, Result, Schema, SchemaIssue } from "effect";
+import { Context, Effect, Layer, Result, Schema, SchemaIssue } from "effect";
 
 import { historyDocumentSchema } from "./schema";
 
 const DEFAULT_PATH = "community-history.json";
 const decodeJson = Schema.decodeUnknownEffect(Schema.fromJsonString(Schema.Unknown));
 
-export class HistoryReadError extends Data.TaggedError("HistoryReadError")<{
-  readonly path: string;
-  readonly cause: unknown;
-}> {
+// oxlint-disable-next-line unicorn/throw-new-error -- Schema.TaggedError is a class factory.
+export class HistoryReadError extends Schema.TaggedError<
+  HistoryReadError,
+  { readonly brand: unique symbol }
+>()("HistoryReadError", { path: Schema.String, cause: Schema.Unknown }) {
   override get message() {
     return `Could not read history file: ${this.path}`;
   }
 }
 
-export class HistoryJsonError extends Data.TaggedError("HistoryJsonError")<{
-  readonly path: string;
-  readonly cause: unknown;
-}> {
+// oxlint-disable-next-line unicorn/throw-new-error -- Schema.TaggedError is a class factory.
+export class HistoryJsonError extends Schema.TaggedError<
+  HistoryJsonError,
+  { readonly brand: unique symbol }
+>()("HistoryJsonError", { path: Schema.String, cause: Schema.Unknown }) {
   override get message() {
     return `Invalid JSON in history file: ${this.path}`;
   }
 }
 
-export class HistoryReportError extends Data.TaggedError("HistoryReportError")<{
-  readonly stream: "stdout" | "stderr";
-  readonly cause: unknown;
-}> {}
+// oxlint-disable-next-line unicorn/throw-new-error -- Schema.TaggedError is a class factory.
+export class HistoryReportError extends Schema.TaggedError<
+  HistoryReportError,
+  { readonly brand: unique symbol }
+>()("HistoryReportError", {
+  stream: Schema.Literals(["stdout", "stderr"]),
+  cause: Schema.Unknown,
+}) {}
 
 export class HistoryIO extends Context.Service<
   HistoryIO,
