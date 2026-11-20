@@ -1,5 +1,9 @@
 # 6b6t Community History
 
+Community history is now hosted and managed in [6b6t CMS](https://cms.6b6t.org/admin). Use the CMS for new events and updates.
+
+This repository remains a read-only snapshot. Existing image URLs remain available. The contribution instructions below describe the former workflow.
+
 Help document the events, builds, updates, and people that shaped 6b6t.
 
 **Edit [community-history.json](community-history.json)** and open a pull request. This single file contains all stories, paragraphs, tags, image links, YouTube links, and sources. Its editing guide travels with it when downloaded or shared.
