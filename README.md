@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> This repository has moved to **[git.6b6t.org/6b6t/6b6t-history](https://git.6b6t.org/6b6t/6b6t-history)**. This GitHub copy is archived and no longer updated.
+
 # 6b6t Community History
 
 Community history is now hosted and managed in [6b6t CMS](https://cms.6b6t.org/admin). Use the CMS for new events and updates.
